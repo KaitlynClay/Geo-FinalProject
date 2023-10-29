@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Geo-FinalProject</string>
+    <string name="message">Choose a continent</string>
+    <string name="NA">North America</string>
+    <string name="SA">South America</string>
+    <string name="Afr">Africa</string>
+    <string name="Eur">Europe</string>
+    <string name="Ai">Asia</string>
+    <string name="AnO">Australia/Oceania</string>
+    <string name="Ant">Antarctica</string>
+    <string name="btnHome">Home</string>
+</resources>
