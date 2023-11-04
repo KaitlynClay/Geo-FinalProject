@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/idLoginMessage"
+        android:layout_width="369dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/loginMessage"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idNameTxtEntry"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/nameTxt"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idLoginMessage" />
+
+    <EditText
+        android:id="@+id/idUsernameTxtEntry"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/usernameTxt"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNameTxtEntry" />
+
+    <EditText
+        android:id="@+id/idEmailTxtEntry"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/emailTxt"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idUsernameTxtEntry" />
+
+    <EditText
+        android:id="@+id/idPasswordTxtEntry"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/passwordTxt"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEmailTxtEntry" />
+
+    <EditText
+        android:id="@+id/idContinentTxtEntry"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/continentTxt"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPasswordTxtReEntry" />
+
+    <EditText
+        android:id="@+id/idNationTxtEntry"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/nationTxt"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idContinentTxtEntry" />
+
+    <Button
+        android:id="@+id/idLoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="@color/darkGreen"
+        android:backgroundTintMode="add"
+        android:text="@string/loginBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNationTxtEntry"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/idPasswordTxtReEntry"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/passwordReEntryTxt"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPasswordTxtEntry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

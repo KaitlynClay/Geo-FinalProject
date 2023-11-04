@@ -9,4 +9,14 @@
     <string name="AnO">Australia/Oceania</string>
     <string name="Ant">Antarctica</string>
     <string name="btnHome">Home</string>
+    <string name="loginMessage">Please enter your information</string>
+    <string name="nameTxt">Name</string>
+    <string name="usernameTxt">Username</string>
+    <string name="emailTxt">Email</string>
+    <string name="passwordTxt">Password</string>
+    <string name="passwordReEntryTxt">Re-enter Password</string>
+    <string name="continentTxt">Continent</string>
+    <string name="nationTxt">Nation</string>
+    <string name="loginBtn">Login</string>
+
 </resources>
