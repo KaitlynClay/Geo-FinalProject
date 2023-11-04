@@ -18,5 +18,11 @@
     <string name="continentTxt">Continent</string>
     <string name="nationTxt">Nation</string>
     <string name="loginBtn">Login</string>
-
+    <string name="errName">Invalid name. Please retry.</string>
+    <string name="errUser">Invalid username. Please retry.</string>
+    <string name="errEmail">Invalid email. Please retry.</string>
+    <string name="errPassword">Invalid password. Please retry.</string>
+    <string name="errRePass">Passwords are not the same. Please retry.</string>
+    <string name="errContinent">Invalid continent. Please retry.</string>
+    <string name="errNation">Invalid country. Please retry.</string>
 </resources>
