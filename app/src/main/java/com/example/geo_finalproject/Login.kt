@@ -70,8 +70,10 @@ class Login : AppCompatActivity() {
                 else -> {
                     btnLogin.setOnClickListener {
                         val intent = Intent(this, MainActivity::class.java)
+                        intent.putExtra("username", userTxt.toString())
                         startActivity(intent)
-                    }                }
+                    }
+                }
             }
         }
     }

@@ -10,6 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val profileBtn = findViewById<Button>(R.id.idUserBtn)
+        val user = intent.getStringExtra("username")
+        val user2L = user?.take(2)
+        profileBtn.text = user2L
+
         val btnNA = findViewById<Button>(R.id.idNorthAmerica)
         btnNA.setOnClickListener {
             val intent = Intent(this, NorthAmerica::class.java)
