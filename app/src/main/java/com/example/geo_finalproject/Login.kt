@@ -70,7 +70,7 @@ class Login : AppCompatActivity() {
                 else -> {
                     btnLogin.setOnClickListener {
                         val intent = Intent(this, MainActivity::class.java)
-                        intent.putExtra("username", userTxt.toString())
+                        intent.putExtra("username", userTxt.text.toString())
                         startActivity(intent)
                     }
                 }
@@ -82,7 +82,6 @@ class Login : AppCompatActivity() {
         val deUser = "JLennox"
         val deEmail = "jlennox9860@gmail.com"
         val dePass = "password"
-//        val validContinents = listOf(R.string.NA, R.string.SA, R.string.Afr, R.string.Ant, R.string.Ai, R.string.AnO, R.string.Eur)
         val validContinents = listOf<String>("North America", "South America", "Africa", "Asia", "Antarctica", "Australia", "Oceania", "Europe")
 
         return if (nameEntry != deName) {
