@@ -25,4 +25,5 @@
     <string name="errRePass">Passwords are not the same. Please retry.</string>
     <string name="errContinent">Invalid continent. Please retry.</string>
     <string name="errNation">Invalid country. Please retry.</string>
+    <string name="profile">Your Profile</string>
 </resources>

@@ -69,9 +69,19 @@ class Login : AppCompatActivity() {
                 }
                 else -> {
                     btnLogin.setOnClickListener {
-                        val intent = Intent(this, MainActivity::class.java)
-                        intent.putExtra("username", userTxt.text.toString())
-                        startActivity(intent)
+                        val intent2 = Intent(this, User_Profile::class.java)
+                        intent2.putExtra("name", nameTxt.text.toString())
+                        intent2.putExtra("username", userTxt.text.toString())
+                        intent2.putExtra("email", emailTxt.text.toString())
+                        intent2.putExtra("password", passTxt.text.toString())
+                        intent2.putExtra("continent", continTxt.text.toString())
+                        intent2.putExtra("nation", nationTxt.text.toString())
+                        startActivity(intent2)
+
+                        val intent1 = Intent(this, MainActivity::class.java)
+                        intent1.putExtra("username", userTxt.text.toString())
+                        startActivity(intent1)
+
                     }
                 }
             }

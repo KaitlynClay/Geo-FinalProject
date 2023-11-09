@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_Profile">
+
+    <TextView
+        android:id="@+id/idNationDisProf"
+        android:layout_width="243dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="13dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/idContinDisProf" />
+
+    <TextView
+        android:id="@+id/idPassDisProf"
+        android:layout_width="243dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="13dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idPassProf"
+        app:layout_constraintTop_toBottomOf="@+id/idEmailDisProf" />
+
+    <TextView
+        android:id="@+id/idContinDisProf"
+        android:layout_width="243dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="13dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idContinProf"
+        app:layout_constraintTop_toBottomOf="@+id/idPassDisProf" />
+
+    <TextView
+        android:id="@+id/idEmailDisProf"
+        android:layout_width="243dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="13dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idEmailProf"
+        app:layout_constraintTop_toBottomOf="@+id/idUserDisProf" />
+
+    <TextView
+        android:id="@+id/idUserDisProf"
+        android:layout_width="243dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="13dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idUserProf"
+        app:layout_constraintTop_toBottomOf="@+id/idNameDisProf" />
+
+    <TextView
+        android:id="@+id/idProfielTtle"
+        android:layout_width="268dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="63dp"
+        android:gravity="center_horizontal"
+        android:text="@string/profile"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idNameProf"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/nameTxt"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idProfielTtle" />
+
+    <TextView
+        android:id="@+id/idNameDisProf"
+        android:layout_width="243dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="13dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idNameProf"
+        app:layout_constraintTop_toBottomOf="@+id/idProfielTtle" />
+
+    <TextView
+        android:id="@+id/idUserProf"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/usernameTxt"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNameProf" />
+
+    <TextView
+        android:id="@+id/idEmailProf"
+        android:layout_width="68dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/emailTxt"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idUserProf" />
+
+    <TextView
+        android:id="@+id/idPassProf"
+        android:layout_width="113dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/passwordTxt"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEmailProf" />
+
+    <TextView
+        android:id="@+id/idContinProf"
+        android:layout_width="112dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/continentTxt"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPassProf" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/nationTxt"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idContinProf" />
+
+    <Button
+        android:id="@+id/idBtnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/darkGreen"
+        android:text="@string/btnHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNationDisProf" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
