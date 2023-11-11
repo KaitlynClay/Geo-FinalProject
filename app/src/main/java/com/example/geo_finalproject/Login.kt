@@ -1,5 +1,6 @@
 package com.example.geo_finalproject
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -37,6 +38,7 @@ class Login : AppCompatActivity() {
         val btnLogin = findViewById<Button>(R.id.idLoginBtn)
 
 
+
         btnLogin.setOnClickListener {
             when (CheckLogin(nameTxt.text.toString(), userTxt.text.toString(), emailTxt.text.toString(), passTxt.text.toString(), rePassTxt.text.toString(), continTxt.text.toString(), nationTxt.text.toString())){
                 LoginSuccess.name1 -> {
@@ -69,18 +71,17 @@ class Login : AppCompatActivity() {
                 }
                 else -> {
                     btnLogin.setOnClickListener {
-                        val intent2 = Intent(this, User_Profile::class.java)
-                        intent2.putExtra("name", nameTxt.text.toString())
-                        intent2.putExtra("username", userTxt.text.toString())
-                        intent2.putExtra("email", emailTxt.text.toString())
-                        intent2.putExtra("password", passTxt.text.toString())
-                        intent2.putExtra("continent", continTxt.text.toString())
-                        intent2.putExtra("nation", nationTxt.text.toString())
-                        startActivity(intent2)
-
-                        val intent1 = Intent(this, MainActivity::class.java)
-                        intent1.putExtra("username", userTxt.text.toString())
-                        startActivity(intent1)
+                        val intent = Intent(this, MainActivity::class.java)
+                        val sharedPref = getSharedPreferences("MySharedPref", Context.MODE_PRIVATE)
+                        val sharedPrefEditor = sharedPref.edit()
+                        sharedPrefEditor.putString("name", nameTxt.text.toString())
+                        sharedPrefEditor.putString("username", userTxt.text.toString())
+                        sharedPrefEditor.putString("email", emailTxt.text.toString())
+                        sharedPrefEditor.putString("password", passTxt.text.toString())
+                        sharedPrefEditor.putString("continent", continTxt.text.toString())
+                        sharedPrefEditor.putString("nation", nationTxt.text.toString())
+                        sharedPrefEditor.apply()
+                        startActivity(intent)
 
                     }
                 }

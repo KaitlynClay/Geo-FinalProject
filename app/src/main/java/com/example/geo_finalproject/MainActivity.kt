@@ -1,5 +1,6 @@
 package com.example.geo_finalproject
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,14 +11,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
         val profileBtn = findViewById<Button>(R.id.idUserBtn)
+
+
+        super.onResume()
+
+        val sharedPref = getSharedPreferences("MySharedPref", Context.MODE_PRIVATE)
+        val savedUsername = sharedPref.getString("username", null)
+
+        val user2L = savedUsername?.take(2)
+        profileBtn.text = user2L
         profileBtn.setOnClickListener {
             val intent = Intent(this, User_Profile::class.java)
             startActivity(intent)
         }
-        val user = intent.getStringExtra("username")
-        val user2L = user?.take(2)
-        profileBtn.text = user2L
+
 
         val btnNA = findViewById<Button>(R.id.idNorthAmerica)
         btnNA.setOnClickListener {

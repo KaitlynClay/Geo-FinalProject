@@ -1,5 +1,6 @@
 package com.example.geo_finalproject
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,18 +20,21 @@ class User_Profile : AppCompatActivity() {
         val disContin = findViewById<TextView>(R.id.idContinDisProf)
         val disNation = findViewById<TextView>(R.id.idNationDisProf)
 
-        val name = intent.getStringExtra("name")
-        disName.text = name
-        val user = intent.getStringExtra("username")
-        disUser.text = user
-        val email = intent.getStringExtra("email")
-        disEmail.text = email
-        val pass = intent.getStringExtra("password")
-        disPass.text = pass
-        val contin = intent.getStringExtra("continent")
-        disContin.text = contin
-        val nation = intent.getStringExtra("nation")
-        disNation.text = nation
+        super.onResume()
+
+        val sharedPref = getSharedPreferences("MySharedPref", Context.MODE_PRIVATE)
+        val savedName = sharedPref.getString("name", null)
+        val savedUsername = sharedPref.getString("username", null)
+        val savedEmail = sharedPref.getString("email", null)
+        val savedPass = sharedPref.getString("password", null)
+        val savedContin = sharedPref.getString("continent", null)
+        val savedNation = sharedPref.getString("nation", null)
+        disName.text = savedName
+        disUser.text = savedUsername
+        disEmail.text = savedEmail
+        disPass.text = savedPass
+        disContin.text = savedContin
+        disNation.text = savedNation
 
 
         btnHome.setOnClickListener {
