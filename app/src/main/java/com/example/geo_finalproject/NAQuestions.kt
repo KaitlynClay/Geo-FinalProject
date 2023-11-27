@@ -91,8 +91,8 @@ class NAQuestions : AppCompatActivity() {
     }
 
     private fun displayCurrentQuestion() {
-        if (currentQuestionIndex < questionList.size) {
-            val currentQuestion = questionList[currentQuestionIndex]
+        if (currentQuestionIndex < shuffledQuestions.size) {
+            val currentQuestion = shuffledQuestions[currentQuestionIndex]
             questionTxtView.text = currentQuestion.questionTxt
             val shuffledOptions = currentQuestion.options.shuffled()
 
