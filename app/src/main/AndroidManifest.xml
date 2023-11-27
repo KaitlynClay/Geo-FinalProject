@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GeoFinalProject"
         tools:targetApi="31">
         <activity
+            android:name=".SAQuestions"
+            android:exported="false" />
+        <activity
             android:name=".NAQuestions"
             android:exported="false" />
         <activity

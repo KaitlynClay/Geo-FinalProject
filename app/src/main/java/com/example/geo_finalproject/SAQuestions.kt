@@ -8,7 +8,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 
-class NAQuestions : AppCompatActivity() {
+class SAQuestions : AppCompatActivity() {
     private val questionList = mutableListOf<Question>()
     private var shuffledQuestions: List<Question> = emptyList()
     private var currentQuestionIndex = 0
@@ -23,44 +23,44 @@ class NAQuestions : AppCompatActivity() {
         setContentView(R.layout.activity_naquestions)
 
         val question1 = Question(
-            "How many states make up the USA?",
-            listOf("52", "50", "49", "51"), "50"
+            "How many countries are in South America?",
+            listOf("12", "14", "10", "13"), "12"
         )
         val question2 = Question(
-            " What is the largest freshwater lake in North America?",
-            listOf("Lake Erie", "Lake Huron", "Lake Michigan", "Lake Superior"), "Lake Superior"
+            "Which South American country is home to the worlds second-largest swimming pool?",
+            listOf("Chile", "Brazil", "Peru", "Argentina"), "Chile"
         )
         val question3 = Question(
-            "Which North American mammal has the longest migration?",
-            listOf("Redwing Blackbird", "Canadian Geese", "Caribou", "Monarch Butterfly"), "Caribou"
+            "Which South American River is the longest?",
+            listOf("Amazon River", "Purus River", "Jurua River", "Paraguay River"), "Amazon River"
         )
         val question4 = Question(
-            "Which Canadian province has the largest French-speaking population outside of France?",
-            listOf("Alberta", "Quebec", "Ontario", "Manitoba"), "Quebec"
+            "The world's largest salt flat in located in which South American Country?",
+            listOf("Bolivia", "Brazil", "Venezuela", "Uruguay"), "Bolivia"
         )
         val question5 = Question(
-            " Which natural wonder in Arizona is one of the Seven Wonders of the Natural World?",
-            listOf("Grand Canyon", "Monument Valley", "Lake Powell", "Horseshoe Bend"), "Grand Canyon"
+            "Which city is the capital of Brazil?",
+            listOf("Brasilia", "Belo Horizonte", "Fortaleza", "Salvador"), "Brasilia"
         )
         val question6 = Question(
-            "What is the most expensive city to live in North America?",
-            listOf("Toronto", "Mexico City", "San Francisco", "New York City"), "San Francisco"
+            "Which South American country uses the US dollar as its official currency?",
+            listOf("Ecuador", "Argentina", "Peru", "Suriname"), "Ecuador"
         )
         val question7 = Question(
-            "What is the longest river in North America?",
-            listOf("Rio Grande", "Yukon River", "Mississippi River", "Missouri River"), "Missouri River"
+            "Largest country in South America?",
+            listOf("Brazil", "Argentina", "Columbia", "Paraguay"), "Brazil"
         )
         val question8 = Question(
-            "What is the tallest mountain in North America?",
-            listOf("Mt Logan", "Denali", "Mt Whitney", "Mt Rainier"), "Denali"
+            "What percentage of the world's alpaca population lives in Peru?",
+            listOf("88%", "90%", "31.5%", "62%"), "88%"
         )
         val question9 = Question(
-            "What is the largest desert in North America?",
-            listOf("Chihuahuan Desert", "Carson Desert", "Tule Desert", "Red Desert"), "Chihuahuan Desert"
+            "Which South American Nation is the world's largest producer of coffee?",
+            listOf("Brazil", "Chile", "Columbia", "Argentina"), "Brazil"
         )
         val question10 = Question(
-            "What is the highest waterfall in North America?",
-            listOf("Fall Creek Falls", "Yosemite Falls", "Niagara Falls", "Multnomah Falls"), "Yosemite Falls"
+            "Most spoken language in South America?",
+            listOf("Spanish", "English", "Portuguese", "Quechua"), "Spanish"
         )
 
         questionList.add(question1)
@@ -137,3 +137,5 @@ class NAQuestions : AppCompatActivity() {
     }
 
 }
+
+

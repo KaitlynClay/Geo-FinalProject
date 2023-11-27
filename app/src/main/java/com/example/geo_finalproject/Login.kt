@@ -37,6 +37,7 @@ class Login : AppCompatActivity() {
         val nationTxt = findViewById<TextView>(R.id.idNationTxtEntry)
         val btnLogin = findViewById<Button>(R.id.idLoginBtn)
 
+        nameTxt.requestFocus()
 
 
         btnLogin.setOnClickListener {
