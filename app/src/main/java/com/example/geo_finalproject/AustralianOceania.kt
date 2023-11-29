@@ -15,5 +15,10 @@ class AustralianOceania : AppCompatActivity() {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
+        val btnQuestion = findViewById<Button>(R.id.idQuestionBtn)
+        btnQuestion.setOnClickListener {
+            val intent = Intent(this,AnOQuestions::class.java)
+            startActivity(intent)
+        }
     }
 }

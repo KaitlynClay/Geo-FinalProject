@@ -8,7 +8,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 
-class SAQuestions : AppCompatActivity() {
+class EuQuestions : AppCompatActivity() {
     private val questionList = mutableListOf<Question>()
     private var shuffledQuestions: List<Question> = emptyList()
     private var currentQuestionIndex = 0
@@ -131,7 +131,7 @@ class SAQuestions : AppCompatActivity() {
     }
 
     private fun moveToAnotherActivity() {
-        val intent = Intent(this,SouthAmerica::class.java)
+        val intent = Intent(this,Europe::class.java)
         startActivity(intent)
         finish()
     }
