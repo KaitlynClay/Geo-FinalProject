@@ -16,7 +16,7 @@
     <string name="passwordTxt">Password</string>
     <string name="passwordReEntryTxt">Re-enter Password</string>
     <string name="continentTxt">Continent</string>
-    <string name="nationTxt">Nation</string>
+    <string name="nationTxt">Country</string>
     <string name="loginBtn">Login</string>
     <string name="errName">Invalid name. Please retry.</string>
     <string name="errUser">Invalid username. Please retry.</string>

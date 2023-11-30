@@ -20,47 +20,47 @@ class EuQuestions : AppCompatActivity() {
     private lateinit var optionBtn4: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_naquestions)
+        setContentView(R.layout.activity_questions)
 
         val question1 = Question(
-            "How many countries are in South America?",
-            listOf("12", "14", "10", "13"), "12"
+            "What is the longest river in Europe?",
+            listOf("Volga River", "Danube River", "Rhine River", "Dnipro River"), "Volga River"
         )
         val question2 = Question(
-            "Which South American country is home to the worlds second-largest swimming pool?",
-            listOf("Chile", "Brazil", "Peru", "Argentina"), "Chile"
+            "Which European country is known as the \"Land of a Thousand Lakes\"?",
+            listOf("Finland", "Norway", "Great Britain", "Russia"), "Finland"
         )
         val question3 = Question(
-            "Which South American River is the longest?",
-            listOf("Amazon River", "Purus River", "Jurua River", "Paraguay River"), "Amazon River"
+            "Which mountain range forms a natural border between France and Spain?",
+            listOf("The Pyrenees", "Alps", "Ural Mountains", "Carpathian Mountains"), "The Pyrenees"
         )
         val question4 = Question(
-            "The world's largest salt flat in located in which South American Country?",
-            listOf("Bolivia", "Brazil", "Venezuela", "Uruguay"), "Bolivia"
+            "Which European country is known for its windmills, tulip fields, and wooden shoes?",
+            listOf("Netherlands", "Sweden", "Finland", "Croatia"), "Netherlands"
         )
         val question5 = Question(
-            "Which city is the capital of Brazil?",
-            listOf("Brasilia", "Belo Horizonte", "Fortaleza", "Salvador"), "Brasilia"
+            "What is the smallest country in Europe by land area?",
+            listOf("Vatican City", "Monaco", "Malta", "San Marino"), "Vatican City"
         )
         val question6 = Question(
-            "Which South American country uses the US dollar as its official currency?",
-            listOf("Ecuador", "Argentina", "Peru", "Suriname"), "Ecuador"
+            "What is the highest mountain in Europe?",
+            listOf("Mount Elbrus", "Mont Blanc", "Monte Rosa", "Dykh-Tau"), "Mount Elbrus"
         )
         val question7 = Question(
-            "Largest country in South America?",
-            listOf("Brazil", "Argentina", "Columbia", "Paraguay"), "Brazil"
+            "Which European country is famous for its beautiful castles, including Bran Castle, often associated with the Dracula legend?",
+            listOf("Romania", "Croatia", "Turkey", "Italy"), "Romania"
         )
         val question8 = Question(
-            "What percentage of the world's alpaca population lives in Peru?",
-            listOf("88%", "90%", "31.5%", "62%"), "88%"
+            "What is the name of the famous museum in Paris that is home to the Mona Lisa?",
+            listOf("The Louvre", "Van Gogh Museum", "Rijksmuseum", "Uffizi gallery"), "The Louvre"
         )
         val question9 = Question(
-            "Which South American Nation is the world's largest producer of coffee?",
-            listOf("Brazil", "Chile", "Columbia", "Argentina"), "Brazil"
+            "Which European country is known as the \"Land of Fire and Ice\" due to its volcanic activity and glaciers?",
+            listOf("Iceland", "Russia", "Sweden", "Norway"), "Iceland"
         )
         val question10 = Question(
-            "Most spoken language in South America?",
-            listOf("Spanish", "English", "Portuguese", "Quechua"), "Spanish"
+            "What is the traditional Scottish musical instrument that features in many European folk tunes?",
+            listOf("Bagpipes", "Celtic Harp", "Fiddle", "Tin Whistle"), "Bagpipes"
         )
 
         questionList.add(question1)

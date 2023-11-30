@@ -20,7 +20,7 @@ class NAQuestions : AppCompatActivity() {
     private lateinit var optionBtn4: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_naquestions)
+        setContentView(R.layout.activity_questions)
 
         val question1 = Question(
             "How many states make up the USA?",

@@ -20,47 +20,47 @@ class AfQuestions : AppCompatActivity() {
     private lateinit var optionBtn4: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_naquestions)
+        setContentView(R.layout.activity_questions)
 
         val question1 = Question(
-            "How many countries are in South America?",
-            listOf("12", "14", "10", "13"), "12"
+            "Which river is the longest in Africa?",
+            listOf("Nile River", "Congo River", "Chobe River", "Zambezi River"), "Nile River"
         )
         val question2 = Question(
-            "Which South American country is home to the worlds second-largest swimming pool?",
-            listOf("Chile", "Brazil", "Peru", "Argentina"), "Chile"
+            "What is the largest country in Africa by land area?",
+            listOf("Algeria", "Ghana", "Senegal", "Niger"), "Algeria"
         )
         val question3 = Question(
-            "Which South American River is the longest?",
-            listOf("Amazon River", "Purus River", "Jurua River", "Paraguay River"), "Amazon River"
+            "What is the largest desert in Africa?",
+            listOf("Sahara Desert", "Grand Bara", "Nubian Desert", "Kalahari Desert"), "Sahara Desert"
         )
         val question4 = Question(
-            "The world's largest salt flat in located in which South American Country?",
-            listOf("Bolivia", "Brazil", "Venezuela", "Uruguay"), "Bolivia"
+            "What is the highest mountain in Africa?",
+            listOf("Mount Kilimanjaro", "Mount Stanley", "Mount Kenya", "Mount Meru"), "Mount Kilimanjaro"
         )
         val question5 = Question(
-            "Which city is the capital of Brazil?",
-            listOf("Brasilia", "Belo Horizonte", "Fortaleza", "Salvador"), "Brasilia"
+            "What is the name of the largest lake in Africa?",
+            listOf("Lake Victoria", "Lake Kivu", "Lake Albert", "Lake Malawi"), "Lake Victoria"
         )
         val question6 = Question(
-            "Which South American country uses the US dollar as its official currency?",
-            listOf("Ecuador", "Argentina", "Peru", "Suriname"), "Ecuador"
+            "In which African country would you find the Atlas Mountains?",
+            listOf("Morocco", "Mali", "Uganda", "Algeria"), "Morocco"
         )
         val question7 = Question(
-            "Largest country in South America?",
-            listOf("Brazil", "Argentina", "Columbia", "Paraguay"), "Brazil"
+            "Which African river is known for its annual migration of wildebeest and zebras?",
+            listOf("Mara River", "Grootrivier", "Lulonga", "Umfolozi River"), "Mara River"
         )
         val question8 = Question(
-            "What percentage of the world's alpaca population lives in Peru?",
-            listOf("88%", "90%", "31.5%", "62%"), "88%"
+            "What is the official language of Angola?",
+            listOf("Portuguese", "Spanish", "English", "French"), "Portuguese"
         )
         val question9 = Question(
-            "Which South American Nation is the world's largest producer of coffee?",
-            listOf("Brazil", "Chile", "Columbia", "Argentina"), "Brazil"
+            "Which African country is known as the \"Land of a Million Elephants\"?",
+            listOf("Laos", "Angola", "Rwanda", "Cameroon"), "Laos"
         )
         val question10 = Question(
-            "Most spoken language in South America?",
-            listOf("Spanish", "English", "Portuguese", "Quechua"), "Spanish"
+            "What is the largest national park in Africa, known for its wildlife including lions, elephants, and giraffes?",
+            listOf("Chobe National Park", "Hwange National Park", "Kruger National Park", "Virunga National Park"), "Chobe National Park"
         )
 
         questionList.add(question1)

@@ -20,47 +20,47 @@ class AsQuestions : AppCompatActivity() {
     private lateinit var optionBtn4: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_naquestions)
+        setContentView(R.layout.activity_questions)
 
         val question1 = Question(
-            "How many countries are in South America?",
-            listOf("12", "14", "10", "13"), "12"
+            "Which Asian country is known as the \"Land of the Rising Sun\"?",
+            listOf("Japan", "China", "Taiwan", "South Korea"), "Japan"
         )
         val question2 = Question(
-            "Which South American country is home to the worlds second-largest swimming pool?",
-            listOf("Chile", "Brazil", "Peru", "Argentina"), "Chile"
+            "In which country is the Great Wall located?",
+            listOf("China", "Mongolia", "Russia", "India"), "China"
         )
         val question3 = Question(
-            "Which South American River is the longest?",
-            listOf("Amazon River", "Purus River", "Jurua River", "Paraguay River"), "Amazon River"
+            "Which river is considered the holiest in Hinduism and is a sacred river in India?",
+            listOf("Ganges River", "Indus River", "Yellow River", "Salween River"), "Ganges River"
         )
         val question4 = Question(
-            "The world's largest salt flat in located in which South American Country?",
-            listOf("Bolivia", "Brazil", "Venezuela", "Uruguay"), "Bolivia"
+            "What is the largest desert in Asia?",
+            listOf("Gobi Desert", "Thar Desert", "Karakum Desert", "Thal Desert"), "Gobi Desert"
         )
         val question5 = Question(
-            "Which city is the capital of Brazil?",
-            listOf("Brasilia", "Belo Horizonte", "Fortaleza", "Salvador"), "Brasilia"
+            "What is the official language of Iran?",
+            listOf("Persian", "Arabic", "Chinese", "Hebrew"), "Persian"
         )
         val question6 = Question(
-            "Which South American country uses the US dollar as its official currency?",
-            listOf("Ecuador", "Argentina", "Peru", "Suriname"), "Ecuador"
+            "In which country would you find the ancient city of Babylon?",
+            listOf("Iraq", "Iran", "Kazakhstan", "Turkey"), "Iraq"
         )
         val question7 = Question(
-            "Largest country in South America?",
-            listOf("Brazil", "Argentina", "Columbia", "Paraguay"), "Brazil"
+            "What is the largest Muslim-majority country in the world?",
+            listOf("Indonesia", "Saudi Arabia", "Iran", "Mongolia"), "Indonesia"
         )
         val question8 = Question(
-            "What percentage of the world's alpaca population lives in Peru?",
-            listOf("88%", "90%", "31.5%", "62%"), "88%"
+            "Which river is considered the cradle of Chinese civilization and is often called the \"Mother River of China\"?",
+            listOf("Yellow River", "Amur River", "Tarim River", "Yangtze River"), "Yellow River"
         )
         val question9 = Question(
-            "Which South American Nation is the world's largest producer of coffee?",
-            listOf("Brazil", "Chile", "Columbia", "Argentina"), "Brazil"
+            "Which Central Asian country is famous for its horse culture and nomadic traditions?",
+            listOf("Mongolia", "Nepal", "Kuwait", "Uzbekistan"), "Mongolia"
         )
         val question10 = Question(
-            "Most spoken language in South America?",
-            listOf("Spanish", "English", "Portuguese", "Quechua"), "Spanish"
+            "Which Asian country is the world's most populous, with over a billion people?",
+            listOf("China", "Russia", "India", "Pakistan"), "China"
         )
 
         questionList.add(question1)

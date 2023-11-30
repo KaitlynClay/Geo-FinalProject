@@ -20,47 +20,47 @@ class AnOQuestions : AppCompatActivity() {
     private lateinit var optionBtn4: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_naquestions)
+        setContentView(R.layout.activity_questions)
 
         val question1 = Question(
-            "How many countries are in South America?",
-            listOf("12", "14", "10", "13"), "12"
+            "What is the largest country in Oceania by land area?",
+            listOf("Australia", "New Zealand", "Fiji", "Tonga"), "Australia"
         )
         val question2 = Question(
-            "Which South American country is home to the worlds second-largest swimming pool?",
-            listOf("Chile", "Brazil", "Peru", "Argentina"), "Chile"
+            "What is the largest city in New Zealand?",
+            listOf("Auckland", "Dunedin", "Wellington", "Queenstown"), "Auckland"
         )
         val question3 = Question(
-            "Which South American River is the longest?",
-            listOf("Amazon River", "Purus River", "Jurua River", "Paraguay River"), "Amazon River"
+            "In which country would you find the active volcano Mount Taranaki?",
+            listOf("New Zealand", "New Caledonia", "Vanuatu", "Marshall Islands"), "New Zealand"
         )
         val question4 = Question(
-            "The world's largest salt flat in located in which South American Country?",
-            listOf("Bolivia", "Brazil", "Venezuela", "Uruguay"), "Bolivia"
+            "Which Australian desert is the largest and occupies a significant part of the country's interior?",
+            listOf(" Great Victoria Desert", "Pedirka Desert", "Tirari Desert", "Great Sandy Desert"), " Great Victoria Desert"
         )
         val question5 = Question(
-            "Which city is the capital of Brazil?",
-            listOf("Brasilia", "Belo Horizonte", "Fortaleza", "Salvador"), "Brasilia"
+            "Which Australian state is home to the famous landmark known as the Twelve Apostles?",
+            listOf("Victoria", "Queensland", "Tasmania", "New South Wales"), "Victoria"
         )
         val question6 = Question(
-            "Which South American country uses the US dollar as its official currency?",
-            listOf("Ecuador", "Argentina", "Peru", "Suriname"), "Ecuador"
+            "What is the name of the largest lake in Australia?",
+            listOf("Lake Eyre", "Lake Amadeus", "Dove Lake", "Blue Lake"), "Lake Eyre"
         )
         val question7 = Question(
-            "Largest country in South America?",
-            listOf("Brazil", "Argentina", "Columbia", "Paraguay"), "Brazil"
+            "Which island country in the Pacific Ocean is known as the \"Friendly Islands\"?",
+            listOf("Tonga", "Solomon Islands", "Samoa", "Cook Islands"), "Tonga"
         )
         val question8 = Question(
-            "What percentage of the world's alpaca population lives in Peru?",
-            listOf("88%", "90%", "31.5%", "62%"), "88%"
+            " In which Oceania country would you find the unique and endangered animal known as the kiwi?",
+            listOf("New Zealand", "Australia", "Papa New Guinea", "Tokelau"), "New Zealand"
         )
         val question9 = Question(
-            "Which South American Nation is the world's largest producer of coffee?",
-            listOf("Brazil", "Chile", "Columbia", "Argentina"), "Brazil"
+            "In which country is the famous natural wonder known as the \"Waitomo Glowworm Caves\"?",
+            listOf("New Zealand", "Tonga", "Samoa", "Guam"), "New Zealand"
         )
         val question10 = Question(
-            "Most spoken language in South America?",
-            listOf("Spanish", "English", "Portuguese", "Quechua"), "Spanish"
+            "Which Australian state is renowned for its wine production, particularly in the regions of Barossa Valley and Clare Valley?",
+            listOf("South Australia", "Victoria", "Western Australia", "Queensland"), "South Australia"
         )
 
         questionList.add(question1)

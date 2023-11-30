@@ -20,47 +20,47 @@ class AnQuestions : AppCompatActivity() {
     private lateinit var optionBtn4: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_naquestions)
+        setContentView(R.layout.activity_questions)
 
         val question1 = Question(
-            "How many countries are in South America?",
-            listOf("12", "14", "10", "13"), "12"
+            "What is the highest peak in Antarctica?",
+            listOf("Vinson Massif", "Mount Tyree", "Mount Gardner", "Mount Kirkpatrick"), "Vinson Massif"
         )
         val question2 = Question(
-            "Which South American country is home to the worlds second-largest swimming pool?",
-            listOf("Chile", "Brazil", "Peru", "Argentina"), "Chile"
+            "What is the coldest temperature ever recorded in Antarctica, and where was it recorded?",
+            listOf("-128.6°F", "-153.7°F", "-112.0°F", "-120.3°F"), "-128.6°F"
         )
         val question3 = Question(
-            "Which South American River is the longest?",
-            listOf("Amazon River", "Purus River", "Jurua River", "Paraguay River"), "Amazon River"
+            " In what year did humans first set foot on Antarctica?",
+            listOf("1820", "1910", "1812", "1842"), "1820"
         )
         val question4 = Question(
-            "The world's largest salt flat in located in which South American Country?",
-            listOf("Bolivia", "Brazil", "Venezuela", "Uruguay"), "Bolivia"
+            "Which ocean surrounds Antarctica?",
+            listOf("Southern Ocean", "Pacific Ocean", "Atlantic Ocean", "Indian Ocean"), "Southern Ocean"
         )
         val question5 = Question(
-            "Which city is the capital of Brazil?",
-            listOf("Brasilia", "Belo Horizonte", "Fortaleza", "Salvador"), "Brasilia"
+            "What is the largest ice shelf in Antarctica?",
+            listOf("Ross Ice Shelf", "Filchner-Ronne Ice Shelf", "Quar Ice Shelf", "Vigrid Ice Shelfr"), "Ross Ice Shelf"
         )
         val question6 = Question(
-            "Which South American country uses the US dollar as its official currency?",
-            listOf("Ecuador", "Argentina", "Peru", "Suriname"), "Ecuador"
+            "What is the primary gas that makes up Antarctica's atmosphere?",
+            listOf("Nitrogen", "Oxygen", "Hydrogen", "Methane"), "Nitrogen"
         )
         val question7 = Question(
-            "Largest country in South America?",
-            listOf("Brazil", "Argentina", "Columbia", "Paraguay"), "Brazil"
+            "What is the largest island in Antarctica?",
+            listOf("Alexander Island", "Deception Island", "King George Island", "Ross Island"), "Alexander Island"
         )
         val question8 = Question(
-            "What percentage of the world's alpaca population lives in Peru?",
-            listOf("88%", "90%", "31.5%", "62%"), "88%"
+            "What is the primary type of precipitation in Antarctica?",
+            listOf("Snow", "Rain", "Ice", "Mist"), "Snow"
         )
         val question9 = Question(
-            "Which South American Nation is the world's largest producer of coffee?",
-            listOf("Brazil", "Chile", "Columbia", "Argentina"), "Brazil"
+            "What is the largest ice-covered (sub-glacial) freshwater lake in Antarctica?",
+            listOf("Lake Vostok", "Lake Whillans", "Mercer Lake", "Lake Ellsworth"), "Lake Vostok"
         )
         val question10 = Question(
-            "Most spoken language in South America?",
-            listOf("Spanish", "English", "Portuguese", "Quechua"), "Spanish"
+            "Which type of seal is commonly found in Antarctic waters?",
+            listOf("Weddell seal", "Leopard seal", "Crabeater seal", "Elephant Seal"), "Weddell seal"
         )
 
         questionList.add(question1)
