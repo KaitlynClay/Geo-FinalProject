@@ -94,7 +94,8 @@ class Login : AppCompatActivity() {
         val deUser = "JLennox"
         val deEmail = "jlennox9860@gmail.com"
         val dePass = "password"
-        val validContinents = listOf<String>("North America", "South America", "Africa", "Asia", "Antarctica", "Australia", "Oceania", "Europe")
+        val validContinents = listOf<String>("North America", "South America", "Africa", "Asia", "Antarctica", "Australia", "Oceania", "Europe",
+            "north america", "south america", "africa", "asia", "antarctica", "australia", "oceania", "europe")
 
         return if (nameEntry != deName) {
             LoginSuccess.name1

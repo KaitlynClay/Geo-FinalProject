@@ -24,7 +24,7 @@
         android:layout_width="243dp"
         android:layout_height="37dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="13dp"
         android:gravity="center_vertical"
         android:textSize="16sp"
@@ -63,11 +63,12 @@
         android:layout_width="243dp"
         android:layout_height="37dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="13dp"
         android:gravity="center_vertical"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toEndOf="@+id/idUserProf"
         app:layout_constraintTop_toBottomOf="@+id/idNameDisProf" />
 
@@ -90,7 +91,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="56dp"
         android:text="@string/nameTxt"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idProfielTtle" />
 
@@ -99,11 +100,12 @@
         android:layout_width="243dp"
         android:layout_height="37dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="13dp"
         android:gravity="center_vertical"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
         app:layout_constraintStart_toEndOf="@+id/idNameProf"
         app:layout_constraintTop_toBottomOf="@+id/idProfielTtle" />
 
@@ -114,7 +116,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="22dp"
         android:text="@string/usernameTxt"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idNameProf" />
 
@@ -123,9 +125,9 @@
         android:layout_width="68dp"
         android:layout_height="36dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="22dp"
         android:text="@string/emailTxt"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idUserProf" />
 
@@ -136,7 +138,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="22dp"
         android:text="@string/passwordTxt"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idEmailProf" />
 
@@ -147,7 +149,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="22dp"
         android:text="@string/continentTxt"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idPassProf" />
 
@@ -158,7 +160,7 @@
         android:layout_marginStart="46dp"
         android:layout_marginTop="22dp"
         android:text="@string/nationTxt"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idContinProf" />
 
@@ -166,11 +168,12 @@
         android:id="@+id/idBtnHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginBottom="150dp"
         android:backgroundTint="@color/darkGreen"
         android:text="@string/btnHome"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idNationDisProf" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
