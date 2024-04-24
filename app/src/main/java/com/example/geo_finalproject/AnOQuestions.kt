@@ -86,6 +86,10 @@ class AnOQuestions : AppCompatActivity() {
     }
 
     private fun displayCurrentQuestion() {
+        val progressTxt: TextView = findViewById(R.id.curTotalTxt)
+        val currentQuestionNumber = currentQuestionIndex + 1
+        progressTxt.text = "$currentQuestionNumber / ${shuffledQuestions.size}"
+
         if (currentQuestionIndex < shuffledQuestions.size) {
             val currentQuestion = shuffledQuestions[currentQuestionIndex]
             questionTxtView.text = currentQuestion.questionTxt
@@ -123,10 +127,15 @@ class AnOQuestions : AppCompatActivity() {
     }
 
     private fun checkAnswer(selectedAnswer: String, correctAnswer: String) {
+        var correct = 0
         if (selectedAnswer == correctAnswer) {
-            Toast.makeText(this,getString(R.string.correctMes), Toast.LENGTH_SHORT).show()
+            correct += 1
+            val correctIntent = Intent(this, CorrectActivity::class.java)
+            startActivity(correctIntent)
         } else {
-            Toast.makeText(this,"Incorrect. The correct answer is $correctAnswer", Toast.LENGTH_SHORT).show()
+            val wrongIntent = Intent(this, WrongActivity::class.java)
+            wrongIntent.putExtra("correct_answer", correctAnswer)
+            startActivity(wrongIntent)
         }
     }
 

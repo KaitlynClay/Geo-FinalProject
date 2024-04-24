@@ -105,7 +105,7 @@
         android:id="@+id/idLoginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="75dp"
         android:backgroundTint="@color/darkGreen"
         android:backgroundTintMode="add"
         android:text="@string/loginBtn"

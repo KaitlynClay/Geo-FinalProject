@@ -13,6 +13,12 @@
         android:theme="@style/Theme.GeoFinalProject"
         tools:targetApi="31">
         <activity
+            android:name=".WrongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CorrectActivity"
+            android:exported="false" />
+        <activity
             android:name=".EuQuestions"
             android:exported="false" />
         <activity

@@ -1,12 +1,12 @@
 package com.example.geo_finalproject
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class NAQuestions : AppCompatActivity() {
     private val questionList = mutableListOf<Question>()
@@ -86,6 +86,10 @@ class NAQuestions : AppCompatActivity() {
     }
 
     private fun displayCurrentQuestion() {
+        val progressTxt: TextView = findViewById(R.id.curTotalTxt)
+        val currentQuestionNumber = currentQuestionIndex + 1
+        progressTxt.text = "$currentQuestionNumber / ${shuffledQuestions.size}"
+
         if (currentQuestionIndex < shuffledQuestions.size) {
             val currentQuestion = shuffledQuestions[currentQuestionIndex]
             questionTxtView.text = currentQuestion.questionTxt
@@ -123,10 +127,15 @@ class NAQuestions : AppCompatActivity() {
     }
 
     private fun checkAnswer(selectedAnswer: String, correctAnswer: String) {
+        var correct = 0
         if (selectedAnswer == correctAnswer) {
-            Toast.makeText(this,getString(R.string.correctMes), Toast.LENGTH_SHORT).show()
-        } else {
-            Toast.makeText(this,"Incorrect. The correct answer is $correctAnswer", Toast.LENGTH_SHORT).show()
+            correct += 1
+            val correctIntent = Intent(this, CorrectActivity::class.java)
+            startActivity(correctIntent)
+       } else {
+            val wrongIntent = Intent(this, WrongActivity::class.java)
+            wrongIntent.putExtra("correct_answer", correctAnswer)
+            startActivity(wrongIntent)
         }
     }
 
