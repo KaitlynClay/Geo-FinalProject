@@ -90,7 +90,7 @@ class AfQuestions : AppCompatActivity() {
 
     private fun displayCurrentQuestion() {
         val progressTxt: TextView = findViewById(R.id.curTotalTxt)
-        val currentQuestionNumber = currentQuestionIndex + 1
+        val currentQuestionNumber = currentQuestionIndex++
         progressTxt.text = "$currentQuestionNumber / ${shuffledQuestions.size}"
 
         if (currentQuestionIndex < shuffledQuestions.size) {
