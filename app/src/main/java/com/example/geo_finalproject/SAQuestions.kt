@@ -12,6 +12,8 @@ class SAQuestions : AppCompatActivity() {
     private val questionList = mutableListOf<Question>()
     private var shuffledQuestions: List<Question> = emptyList()
     private var currentQuestionIndex = 0
+    private var correct = 0
+    private var total = 0
     private lateinit var optionsLayout: LinearLayout
     private lateinit var questionTxtView: TextView
     private lateinit var optionBtn1: Button
@@ -75,6 +77,7 @@ class SAQuestions : AppCompatActivity() {
         questionList.add(question10)
 
         shuffledQuestions = questionList.shuffled()
+        total = shuffledQuestions.size
 
         questionTxtView = findViewById(R.id.idQuestionTxt)
         optionBtn1 = findViewById(R.id.idAnswerOne)
@@ -121,15 +124,13 @@ class SAQuestions : AppCompatActivity() {
                 displayCurrentQuestion()
             }
         } else {
-            Toast.makeText(this,getString(R.string.completed), Toast.LENGTH_SHORT).show()
             moveToAnotherActivity()
         }
     }
 
     private fun checkAnswer(selectedAnswer: String, correctAnswer: String) {
-        var correct = 0
         if (selectedAnswer == correctAnswer) {
-            correct += 1
+            correct++
             val correctIntent = Intent(this, CorrectActivity::class.java)
             startActivity(correctIntent)
         } else {
@@ -140,7 +141,9 @@ class SAQuestions : AppCompatActivity() {
     }
 
     private fun moveToAnotherActivity() {
-        val intent = Intent(this,SouthAmerica::class.java)
+        val intent = Intent(this,FinishCount::class.java)
+        intent.putExtra("correct_answers_count", correct)
+        intent.putExtra("total_answers", total)
         startActivity(intent)
         finish()
     }
