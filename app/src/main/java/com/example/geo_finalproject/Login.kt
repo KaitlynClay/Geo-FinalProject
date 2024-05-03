@@ -90,20 +90,17 @@ class Login : AppCompatActivity() {
         }
     }
     fun CheckLogin(nameEntry: String, usernameEntry: String, emailEntry: String, passwordEntry: String, rePasswordEntry: String, continent: String, nation: String): Any {
-        val deName = "Jade"
-        val deUser = "JLennox"
-        val deEmail = "jlennox9860@gmail.com"
-        val dePass = "password"
         val validContinents = listOf<String>("North America", "South America", "Africa", "Asia", "Antarctica", "Australia", "Oceania", "Europe",
-            "north america", "south america", "africa", "asia", "antarctica", "australia", "oceania", "europe")
+            "north america", "south america", "africa", "asia", "antarctica", "australia", "oceania", "europe" ,
+            "north America", "south America", "North america", "South america")
 
-        return if (nameEntry != deName) {
+        return if (nameEntry.isEmpty()) {
             LoginSuccess.name1
-        } else if (usernameEntry != deUser) {
+        } else if (usernameEntry.isEmpty()) {
             LoginSuccess.username
-        } else if (emailEntry != deEmail) {
+        } else if (emailEntry.isEmpty()) {
             LoginSuccess.email
-        } else if (passwordEntry != dePass) {
+        } else if (passwordEntry.isEmpty()) {
             LoginSuccess.password
         } else if (rePasswordEntry != passwordEntry) {
             LoginSuccess.rePasword
