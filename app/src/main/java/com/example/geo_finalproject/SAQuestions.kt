@@ -3,7 +3,10 @@ package com.example.geo_finalproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
+import android.view.View
 import android.widget.Button
+import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -20,6 +23,10 @@ class SAQuestions : AppCompatActivity() {
     private lateinit var optionBtn2: Button
     private lateinit var optionBtn3: Button
     private lateinit var optionBtn4: Button
+    private lateinit var correctFrame: FrameLayout
+    private lateinit var wrongFrame: FrameLayout
+    private lateinit var overlayView: View
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_questions)
@@ -84,9 +91,44 @@ class SAQuestions : AppCompatActivity() {
         optionBtn2 = findViewById(R.id.idAnswerTwo)
         optionBtn3 = findViewById(R.id.idAnswerThree)
         optionBtn4 = findViewById(R.id.idAnswerFour)
+        correctFrame = findViewById(R.id.frameCorrect)
+        wrongFrame = findViewById(R.id.frameWrong)
+        overlayView = findViewById(R.id.overlayView)
 
         displayCurrentQuestion()
+
+        val correctButton: Button = findViewById(R.id.nextBtnCorrect)
+        val wrongButton: Button = findViewById(R.id.nextBtnWrong)
+
+        correctButton.setOnClickListener {
+            correctFrame.visibility = View.GONE
+            overlayView.visibility = View.GONE
+            if (currentQuestionIndex < shuffledQuestions.size) {
+                displayCurrentQuestion()
+            } else {
+                moveToAnotherActivity()
+            }
+        }
+
+        wrongButton.setOnClickListener {
+            wrongFrame.visibility = View.GONE
+            overlayView.visibility = View.GONE
+            if (currentQuestionIndex < shuffledQuestions.size) {
+                displayCurrentQuestion()
+            } else {
+                moveToAnotherActivity()
+            }
+        }
     }
+
+    override fun onTouchEvent(event: MotionEvent): Boolean {
+        return if (overlayView.visibility == View.VISIBLE) {
+            true
+        } else {
+            super.onTouchEvent(event)
+        }
+    }
+
 
     private fun displayCurrentQuestion() {
         val progressTxt: TextView = findViewById(R.id.curTotalTxt)
@@ -106,41 +148,53 @@ class SAQuestions : AppCompatActivity() {
             optionBtn1.setOnClickListener {
                 checkAnswer(optionBtn1.text.toString(), currentQuestion.correctAnswer)
                 currentQuestionIndex++
-                displayCurrentQuestion()
+                if (currentQuestionIndex <= shuffledQuestions.size) {
+                    displayCurrentQuestion()
+                }
             }
             optionBtn2.setOnClickListener {
                 checkAnswer(optionBtn2.text.toString(), currentQuestion.correctAnswer)
                 currentQuestionIndex++
-                displayCurrentQuestion()
+                if (currentQuestionIndex <= shuffledQuestions.size) {
+                    displayCurrentQuestion()
+                }
             }
             optionBtn3.setOnClickListener {
                 checkAnswer(optionBtn3.text.toString(), currentQuestion.correctAnswer)
                 currentQuestionIndex++
-                displayCurrentQuestion()
+                if (currentQuestionIndex <= shuffledQuestions.size) {
+                    displayCurrentQuestion()
+                }
             }
             optionBtn4.setOnClickListener {
                 checkAnswer(optionBtn4.text.toString(), currentQuestion.correctAnswer)
                 currentQuestionIndex++
-                displayCurrentQuestion()
+                if (currentQuestionIndex <= shuffledQuestions.size) {
+                    displayCurrentQuestion()
+                }
             }
-        } else {
-            moveToAnotherActivity()
         }
     }
+
 
     private fun checkAnswer(selectedAnswer: String, correctAnswer: String) {
         if (selectedAnswer == correctAnswer) {
             correct++
-            val correctIntent = Intent(this, CorrectActivity::class.java)
-            startActivity(correctIntent)
+            correctFrame.visibility = View.VISIBLE
+            overlayView.visibility = View.VISIBLE
+
         } else {
-            val wrongIntent = Intent(this, WrongActivity::class.java)
-            wrongIntent.putExtra("correct_answer", correctAnswer)
-            startActivity(wrongIntent)
+            wrongFrame.visibility = View.VISIBLE
+            overlayView.visibility = View.VISIBLE
+
+            val corAnswerTxt = findViewById<TextView>(R.id.corAnswerTxt)
+            corAnswerTxt.text = correctAnswer
         }
     }
 
+
     private fun moveToAnotherActivity() {
+        overlayView.visibility = View.GONE
         val intent = Intent(this,FinishCount::class.java)
         intent.putExtra("correct_answers_count", correct)
         intent.putExtra("total_answers", total)
@@ -149,5 +203,3 @@ class SAQuestions : AppCompatActivity() {
     }
 
 }
-
-

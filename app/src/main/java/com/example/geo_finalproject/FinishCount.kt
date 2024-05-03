@@ -21,7 +21,7 @@ class FinishCount : AppCompatActivity() {
         val percentage = (correctAnswersCount.toDouble() / totalAnswers.toDouble()) * 100
 
         correctAnswersTxt.text = "Correct Answers: $correctAnswersCount"
-        percentTxt.text = "$percentage%"
+        percentTxt.text = "Your final score: $percentage%"
 
         homeBtn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
